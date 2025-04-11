@@ -21,8 +21,7 @@ const Navbar = () => {
             santosh<span className="text-lime-500">.</span>
           </h1>
         </div>
-        
-        {/* Desktop Navigation */}
+    
         <div className="hidden md:flex space-x-8">
           {navItems.map(({ name, to }) => (
             <Link
@@ -39,7 +38,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Desktop "Let's Talk" Button */}
+ 
         <div className="hidden md:block">
         <Link
               key="Contact"
@@ -47,7 +46,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               spy={true}
-              offset={-70} // Adjust based on navbar height
+              offset={-70} 
             >
               <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors duration-300">
             Let's Talk
@@ -56,7 +55,7 @@ const Navbar = () => {
           
         </div>
 
-        {/* Mobile Menu Button */}
+   
         <div className="md:hidden flex items-center">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -64,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+  
       {isOpen && (
         <div className="md:hidden bg-white px-4 py-2 shadow-md">
           {navItems.map(({ name, to }) => (
