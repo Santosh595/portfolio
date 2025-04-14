@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
 import { Download, MessageCircle } from "lucide-react";
 import avatar from "../assets/avatar.png";
-import resume from "../assets/Santosh_Kumar_Kar_Resume.pdf";
+import resume from "../../public/Santosh_Kumar_Kar_Resume.pdf";
 
 const Hero: React.FC = () => {
   const vantaRef = useRef<HTMLDivElement>(null);
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
           <div className="mt-20 flex flex-col md:flex-row gap-4 items-center md:items-start">
             <a
               href={resume}
-              download="Santosh_Resume.pdf"
+              download="Santosh_Kumar_Kar_Resume.pdf"
               className="flex items-center gap-2 bg-black text-white px-5 py-3 rounded-md shadow-md transition-all duration-300 hover:bg-gray-800 hover:shadow-xl hover:scale-105"
             >
               <Download size={20} /> Download Resume
