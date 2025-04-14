@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
 import { Download, MessageCircle } from "lucide-react";
 import avatar from "../assets/avatar.png";
-import resume from "../assets/Santosh_Resume.pdf";
+import resume from "../assets/Santosh_Kumar_Kar_Resume.pdf";
 
 const Hero: React.FC = () => {
   const vantaRef = useRef<HTMLDivElement>(null);
